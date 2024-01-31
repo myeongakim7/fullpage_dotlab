@@ -1,0 +1,122 @@
+
+/* 리셋 CSS */
+
+html,body,p,div,select,ul,dl,ol,dd,li,table,tr,th,td,h1,h2,h3,h4,form,fieldset,legend,table,tr,td,th,caption,address,blockquote {margin:0; padding:0;}
+address,em {font-style:normal;}
+fieldset, img {border:0 none;}
+h1,h2,h3,h4,h5 {font-size:1em;line-height: 1;margin:0;padding:0}
+legend, caption, hr{display:none;width:0; height:0; font-size:0;}
+input{padding:0;margin:0;border:0px;vertical-align: middle;}
+dl, dt, dd, ul, ol, li{ list-style:none;    padding:0;    margin:0;}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{ display:block;}
+article,section{display:block;margin:0;padding:0;}
+img {vertical-align:top;}
+table {border-spacing:0px;border:0px;border-collapse:collapse}
+address,hr{display:none;}
+form {display:inline;}
+fieldset {padding:0;margin:0;border:none;}
+
+body{padding:0;margin:0;font-family: 'SUIT Variable', 'Noto Sans KR', sans-serif;font-weight :400;font-size:15px;color:#000;line-height: 1;letter-spacing: -0.3px; word-break:break-all;    -webkit-font-smoothing: antialiased;-webkit-text-size-adjust: none; -ms-text-size-adjust: none;}
+input{font-family:'SUIT Variable', '돋움', 'dotum', sans-serif; }
+select{font-family: 'SUIT Variable', sans-serif;font-size:16px;}
+option{font-family: 'SUIT Variable', sans-serif;font-size:16px;}
+textarea{font-family: 'SUIT Variable', sans-serif;font-size:16px;}
+a,a:hover, a:visited, a:active, a:link {text-decoration: none; color:#333433; outline:none;}
+html,body{position:relative;width:100%;height:100%;}
+input[type=text]::-ms-clear {display:none;}
+input[type=password]::-ms-clear {display:none;}
+input[type=tel]::-ms-clear {display:none;}
+input::placeholder{color:#000;opacity: 0.16}
+textarea::placeholder{color:#000;opacity: 0.16;font-size:20px;line-height: 1.5}
+input{outline: none;}
+textarea{outline: none; resize: none; border:1px solid #b2b2b2; padding:10px 15px;font-size:20px;line-height: 1.5;}
+button {outline:none; border:none; cursor:pointer;font-family: 'SUIT Variable', 'Noto Sans KR', sans-serif; }
+p{padding:0;margin:0;}
+
+/*common*/
+* {box-sizing:border-box;}
+/*img {width:100%; height:auto;}*/
+.slick-slide { outline: none;}
+.slick-active { outline: none;}
+.mt10{margin-top: 10px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mt40{margin-top: 40px;}
+.mt50{margin-top: 50px;}
+.mt60{margin-top: 60px;}
+.mt70{margin-top: 70px;}
+
+.hide{display: none}
+
+html, body{}
+body {font-family: 'SUIT Variable', sans-serif;}
+.wrap{position: relative;;width: 100%;height: 100vh; background-color: #fff;}
+.wrap .header{position: fixed; width: 100%;height: 151px; z-index: 9999;}
+.wrap .header .header_inner{position: relative;;width: 1721px; height: 100%; margin: 0 auto;}
+.wrap .header .header_inner .logo{position: absolute; left: 0; bottom: 0;}
+.wrap .header .header_inner .logo img{display: none;}
+.wrap .header .header_inner .logo img.on{display: block;}
+.wrap .header .header_inner .icon_sub_menu{position: absolute; right: 0; bottom: 0;}
+.wrap .header .icon_sub_menu{ width: 82px; height: 82px; cursor: pointer;}
+.wrap .header .icon_sub_menu img{ width:100%; display: none;}
+.wrap .header .icon_sub_menu img.on{display:block;;}
+
+.wrap .main{position: relative;;margin: 0 auto; padding: 151px 0 86px;}
+.wrap .main .inner{position: relative; width: 1721px; height: 780px;  margin: 0 auto; padding-bottom: 53px;}
+.wrap .main .inner .tit{position:absolute; left: 240px; top: 70px;}
+.wrap .main .inner .tit .tit_inner{position: relative;;display: inline-block; padding: 132px  174px 0 0; z-index: 99;}
+.wrap .main .inner .tit img{display: inline-block;width: 100%;z-index: 99;}
+.wrap .main .inner .tit::after{content: ""; position: absolute; right: 0px;top:0px; width: 215px; height: 216px; background: url(/images/shape.png) no-repeat; background-size: 100% 100%; z-index: 98; }
+.wrap .main .inner .tit img::after{z-index: 97;}
+.wrap .main .inner .left_sticker{position: absolute; left: 0; top:172px; display: flex; flex-direction: column; gap: 17px;}
+.wrap .main .inner .text_box{position: absolute; right:17px; ; bottom: 0; display: inline-block;}
+.wrap .main .inner .text_box img{width: 100%;}
+.wrap .footer{position: fixed; bottom: 0; left: 0; right: 0; width: 100%;height: 86px; line-height: 86px; text-align: center; z-index: 9997;}
+
+
+.sub_menu{display: none; position: relative; width: 0%; height: 100vh;background-color: #54dd90; padding-top: 151px; transition: all ease-in-out 0.4s; animation:submenuClose 0.4s ease-in-out; z-index: 9998;}
+.sub_menu.on{display: block; position: fixed; right: 0; top:0; width: 100%; transition: all ease-in-out 0.4s; animation: submenuOpen 0.4s ease-in-out; }
+
+@keyframes submenuClose {
+    0%{width:100%}
+    100%{width: 0%;}
+}
+
+@keyframes submenuOpen {
+    0%{width:0%}
+    100%{width: 100%;}
+}
+.sub_menu .sub_inner{position: relative; width: 1721px; height: calc(100vh - 151px); margin: 0 auto; } 
+.sub_menu .sub_inner .left_img{position: absolute; left: -10px;  bottom:53px;}
+.sub_menu .sub_inner .left_img img{width: 100%;}
+.sub_menu .sub_inner .list_box{position: absolute; left: 202px; top: 44px;}
+.sub_menu .sub_inner .list {}
+.sub_menu .sub_inner .list > li{} 
+.sub_menu .sub_inner .list > li > a{position: relative;;display: inline-block; font-size: 128.38px; line-height: 178.06px; font-weight: 600; letter-spacing: -0.02em; }
+.sub_menu .sub_inner .list > li > a:hover{color:#fff; transition: all 0.3s;}
+.sub_menu .sub_inner .list > li > a:after{}
+.sub_menu .sub_inner .list > li > a:hover::after{content: ""; position: absolute; bottom:-5px; left:0; width: 0; height: 6px; background-color: #fff; animation: underline 0.5s linear forwards; }
+
+
+@keyframes underline {
+    0%{ width: 0%;}
+    100%{width: 100%;}
+}
+
+.sub_menu .sub_inner .download_tab{position: absolute; right:0; bottom:53px; height:107px;display: flex; gap:28px;}
+.sub_menu .sub_inner .download_tab > li{}
+.sub_menu .sub_inner .download_tab > li > a .btn{display: block; width: 100%;}
+.sub_menu .sub_inner .download_tab > li > a .btn.on{display: none;}
+.sub_menu .sub_inner .download_tab > li:hover a .btn{display: none;}
+.sub_menu .sub_inner .download_tab > li:hover a .btn.on{display: block;}
+.sub_menu .sub_inner .download_tab > li > .language_ul{display: none; }
+.sub_menu .sub_inner .download_tab > li > .language_ul.on{display: block;}
+.sub_menu .sub_inner .download_tab > li:hover > .language_ul{display: block;display: flex; gap: 4px; margin-top: 11px; }
+.sub_menu .sub_inner .download_tab > li:hover > .language_ul.on{display: none;}
+
+.sub_menu .sub_inner .download_tab > li > .language_ul > li{position: relative;;width: 100px; height: 47px; line-height: 47px; border: 3px solid #000; border-radius: 50px;}
+.sub_menu .sub_inner .download_tab > li > .language_ul > li > a {position: absolute; top:50%; left: 19px; display: inline-block; width: 100%; height: 47px; transform: translateY(-50%); font-family: 'Noto Sans KR',sans-serif; font-size: 25px; font-weight: 500; line-height: 47px;}
+.sub_menu .sub_inner .download_tab > li > .language_ul > li > a::before{content: ""; position: absolute;  top:50%; right:34px; display: inline-block; width: 25px; height: 25px; transform: translateY(-50%); background: url(/images/sub/icon_download_black.png) no-repeat left center; background-size: 100% 100%;}
+.sub_menu .sub_inner .download_tab > li > .language_ul > li:hover{background-color: #000; border: 3px solid #000;}
+.sub_menu .sub_inner .download_tab > li > .language_ul > li:hover a{color: #54dd90;}
+.sub_menu .sub_inner .download_tab > li > .language_ul > li:hover a::before{background:url(/images/sub/icon_download_white.png) no-repeat left center; background-size: 100% 100%;}
